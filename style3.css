@@ -1,0 +1,122 @@
+@import 'https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap';
+
+body {
+    background-color: rgb(147, 233, 226);
+    color: #8c8c8c;
+    font-size: 17px;
+  }
+  
+  .container {
+    max-width: 6000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-content { background-color: #ffffff; }
+  
+  .text-white { color: rgb(12, 12, 12); }
+ 
+  .page-header-container { text-align: center; }
+
+  .page-header {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 2.1rem;
+    font-weight: 400;
+    font-family: "Julius Sans One";
+    padding-top: 30px;
+  }
+  .page-header span {
+  color: crimson;
+  font-family: "Julius Sans One";
+  font-size: 2.1rem;
+  padding-top: 30px;
+  }
+   
+  .section-header {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+
+  .section {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .section-small {
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+  }
+ 
+  p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: black;
+  }
+
+  .link{
+    font-size: 1.5rem;
+    padding-top: 30px;
+    padding-left: 1000px;
+    text-decoration:underline;
+    text-align: right;
+    margin-right: 45px;
+  }
+ 
+  /* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  align-items: center;
+  text-align: center;
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+  color: white;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+  justify-content: center;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: .3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer .copyright {
+	color: white;
+	font-size: 1.3rem;
+  padding-left: 2.5px;
+	padding-right: 2.5px;
+	margin-left: 2.5px;
+	margin-left: 2.5px;
+}
+/* End Footer */

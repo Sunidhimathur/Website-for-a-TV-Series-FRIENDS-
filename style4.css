@@ -1,0 +1,50 @@
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap';
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color:crimson;
+  }
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration:underline;
+    text-transform: uppercase;
+    color:black;
+}
+  body {
+      font-family:"Georgia", serif;
+      background-image: url("./voucher.jpg");
+      background-size: cover;
+      width: 700px;
+      height: 300px;
+      margin:auto;
+      padding-right: 50px;
+      padding-top: 80px;
+  }
+  .signin {
+    border:3px solid black;
+    background-color: white;
+    margin-top: 62px;
+    margin-bottom: 100px;
+    margin-right: 80px;
+    margin-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: rgb(253, 249, 207);
+    max-width: 1200vh;
+    text-align: left;
+    font-family: "Josefin Slab";
+  }
+
+  button{
+    background-color: rgb(9, 9, 31);
+    color: white;
+    box-shadow: 3px 3px coral;
+  }
+  
+  
+  
+  
+  

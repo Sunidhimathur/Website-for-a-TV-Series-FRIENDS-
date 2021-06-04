@@ -1,0 +1,257 @@
+@import 'https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Girassol&display=swap';
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: black;
+    font-size: 2.1rem;
+	font-family: "Josefin Slab";
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    text-align: justify;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.rounded {
+    width: 260px;
+    margin: none;
+}
+.rounded img {
+    border-radius: 50%;
+    align-items: left;
+}
+.flip-card {
+		background-color: transparent;
+		width: 260px;
+		height: 260px;
+		perspective: 1000px;
+}
+.flip-card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.6s;
+		transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+		transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		border-radius: 50%;
+}
+.flip-card-front {
+		background-color: rgb(165, 211, 248);
+		color: black;
+}
+	  
+.flip-card-back {
+		background-color: #29323c;
+		color: white;
+		transform: rotateY(180deg);
+}
+.insta-link {
+		  color: white;
+}
+.container {
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.section-title {
+    font-size: 6rem;
+    font-weight: 300;
+	font-family: "Julius Sans One";	
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+	padding-top: 100px;
+}
+.section-title span {
+    color: crimson; 
+    padding: 0;
+    font-size: 6rem;
+    font-weight: 300;
+	font-family: "Julius Sans One";	
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: unset;
+    text-align: center;
+}
+#cast .cast {
+	background-color: rgb(245, 250, 173);
+}
+
+/* Actor Section */
+#actor .actor {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 5000px;
+	margin: 0 auto;
+	padding: 10px 20px;
+	background-color: rgb(158, 211, 252);;
+}
+#actor .col-left {
+	width: 250px;
+	height: 360px;
+}
+#actor .col-right {
+	width: 100%;
+}
+#actor .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: .2rem;
+	margin-bottom: 10px;
+	font-family: "Girassol";
+	color:rgb(65, 53, 53);
+}
+#actor .col-right p {
+	margin-bottom: 20px;
+}
+#actor .col-left .actor-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	border: 10px solid white;
+}
+#actor .col-left .rounded-img::after {
+	content: '';
+	position: absolute;
+	left: -33px;
+	top: 19px;
+	height: 98%;
+	width: 98%;
+}
+h1 {
+	font-family: "Girassol";
+	font-size: 3rem;
+	padding-top: 100px;
+}
+hr {
+	width: 80%;
+	height: 0;
+	border: 0.5px solid crimson;
+}
+#actor .link {
+	font-size: 2.4rem;
+	padding-top: 30px;
+	padding-left: 1000px;
+	text-decoration:underline;
+	margin-right: 45px;
+	text-align: right;
+}
+/* End Actor Section */
+
+/* Footer */
+#footer {
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	color:white;
+}
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: .1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
+	text-align: center;
+}
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+}
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: .3s ease filter;
+}
+#footer .social-item:hover img {
+	filter: grayscale(0);
+}
+#footer .copyright {
+	color: white;
+	font-size: 1.3rem;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	margin-left: 2.5px;
+	margin-left: 2.5px;
+}
+/* End Footer */
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+
+/* Actor */
+	#actor .actor {
+		flex-direction: row;
+	}
+	#about .col-left {
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
+        margin-right: 50px;
+	}
+	#actor .actor .col-left .rounded-img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+	}
+	#actor .col-right {
+		text-align: left;
+		padding: 30px;
+        margin-left: 50px;
+	}
+	#actor .col-right h2 {
+		text-align: center;
+        font-size: 3.5rem;
+	}
+	/* End Actor */
+}
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+	/* About */
+	#about .about-bottom .about-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+	/* End About*/
+}
+/* End  Media Query For Desktop */
+

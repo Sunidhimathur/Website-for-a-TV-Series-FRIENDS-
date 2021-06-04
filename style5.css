@@ -1,0 +1,23 @@
+  body {
+    font-family: Arial;
+    padding-top: 90px;
+    background: url('./coupon\ back.gif') no-repeat center center/cover;
+  }
+  .coupon {
+    border: 5px dotted rgb(12, 12, 12);
+    width: 50%;
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 460px;
+    background-color:rgb(233, 183, 193);
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  .promo {
+    background: #ccc;
+    padding: 3px;
+  }
+  .expire {
+    color: red;
+  }
